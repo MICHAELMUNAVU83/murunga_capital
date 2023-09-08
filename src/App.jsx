@@ -5,10 +5,12 @@ import Footer from "./components/Footer";
 import Founder from "./components/Founder";
 import Mission from "./components/Mission";
 import Hero from "./components/Hero";
+import NavBar from "./components/NavBar";
 import "./fonts/Trebuc/trebuc.ttf";
 function App() {
   return (
     <div>
+      <NavBar />
       <Hero />
       <Mission />
       <Approach />
