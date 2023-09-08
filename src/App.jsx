@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Founder from "./components/Founder";
 import Mission from "./components/Mission";
 import Hero from "./components/Hero";
+import "./fonts/Trebuc/trebuc.ttf";
 function App() {
   return (
     <div>

@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "trebuc";
+  src: local("trebuc"), url("./fonts/Trebuc/trebuc.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "bourtonbase";
+  src: local("bourtonbase"),
+    url("./fonts/Bourton/bourtonbase.ttf") format("truetype");
+}
+
+.trebuc {
+  font-family: "trebuc";
+}
+
+.bourtontitle {
+  font-family: "bourtonbase";
+}
