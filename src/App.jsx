@@ -6,6 +6,7 @@ import Founder from "./components/Founder";
 import Mission from "./components/Mission";
 import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
+import Values from "./components/Values";
 import "./fonts/Trebuc/trebuc.ttf";
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Mission />
       <Approach />
       <Founder />
+      <Values />
       <Contact />
       <Footer />
     </div>
