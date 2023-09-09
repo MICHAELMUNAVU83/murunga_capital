@@ -2,16 +2,16 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="md:h-[100vh]  mx-auto w-[90%] flex justify-between">
-      <div className="w-[55%] h-[100%]  py-12 flex flex-col justify-between gap-4">
-        <div className="flex w-[100%] pt-24 flex-col gap-2">
+    <div className="md:h-[100vh]  mx-auto w-[90%] flex  md:flex-row  flex-col-reverse justify-between">
+      <div className="md:w-[55%] h-[100%]  md:py-12 flex flex-col justify-between gap-4">
+        <div className="md:flex hidden w-[100%] md:pt-24 flex-col gap-2">
           <div className="w-[100%] bourtontitle border-b-[5px] border-[#27419B]  text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE]">
             MURUNGA CAPITAL GROUP LLC
           </div>
           <p className="trebuc">Growth. Innovation. Impact.</p>
         </div>
         <div className="flex flex-col  gap-2 w-[100%]">
-          <div className="bourtontitle text-6xl">
+          <div className="bourtontitle text-3xl md:text-6xl">
             Discover Growth, Innovation and Impact
           </div>
           <p className="text-[20px] trebuc">
@@ -28,7 +28,13 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="w-[45%] flex flex-col gap-4">
+      <div className="md:w-[45%] pt-24 md:pt-0 flex flex-col gap-4">
+        <div className="flex md:hidden w-[100%] md:pt-24 flex-col gap-2">
+          <div className="w-[100%] bourtontitle border-b-[5px] border-[#27419B]  text-xl bg-clip-text text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE]">
+            MURUNGA CAPITAL GROUP LLC
+          </div>
+          <p className="trebuc">Growth. Innovation. Impact.</p>
+        </div>
         <img src="/hero1.svg" className="h-[100%] w-[100%] object-cover" />
       </div>
     </div>

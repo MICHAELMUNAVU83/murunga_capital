@@ -9,7 +9,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="top-4 md:px-8  px-4 flex justify-between items-center w-[100%] fixed  shadow-sm shadow-gray-300 bg-white h-[90px]">
+    <div className="top-4 md:px-8  px-4 flex justify-between items-center w-[100%] fixed  shadow-sm shadow-gray-300 bg-white h-[45px] md:h-[90px]">
       <img
         src="/logo.svg"
         className="md:h-[103px] h-[56px] md:w-[173px] w-[93px] object-contain"
