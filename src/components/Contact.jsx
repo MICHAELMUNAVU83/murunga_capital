@@ -3,14 +3,14 @@ import React from "react";
 const Contact = () => {
   return (
     <div className="py-8 w-[90%] mx-auto">
-      <div className="flex flex-col border-t-[5px] border-[#27419B] gap-0">
+      <div className="flex flex-col border-t-[5px] md:border-[#27419B] gap-0">
         <p className="bourtontitle border-[#27419B]  text-5xl bg-clip-text text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE]">
           CONTACT US
         </p>
       </div>
 
-      <div className="w-[100%] mt-4 flex justify-between ">
-        <div className="w-[45%] flex flex-col gap-4">
+      <div className="w-[100%] mt-4 flex md:flex-row flex-col-reverse justify-between ">
+        <div className="md:w-[45%] flex flex-col gap-4">
           <p className="text-3xl uppercase bourtontitle">we’re here to serve</p>
           <div className="text-xl flex flex-col gap-4 trebuc">
             <p>
@@ -31,8 +31,8 @@ const Contact = () => {
           </div>
         </div>
 
-        <p className="h-[626px] w-[1px] bg-black"></p>
-        <div className="w-[45%] flex flex-col gap-4">
+        <p className="h-[626px] w-[1px] hidden md:block bg-black"></p>
+        <div className="md:w-[45%] flex flex-col gap-4">
           <form className="flex trebuc flex-col gap-4 w-[100%]">
             <div className="flex flex-col gap-5 md:flex-row justify-between w-[100%">
               <div className="md:w-[48%]">

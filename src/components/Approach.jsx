@@ -4,12 +4,12 @@ const Approach = () => {
   return (
     <div className="py-8 w-[90%] mx-auto">
       <div className="w-[100%] bourtontitle border-t-[5px] border-[#27419B]  text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE]">
-        MURUNGA CAPITAL GROUP LLC
+        OUR APPROACH
       </div>
 
-      <div className="w-[100%] mt-4 flex justify-between ">
-        <div className="w-[45%] flex flex-col gap-4">
-          <p className="text-4xl bourtontitle my-4">
+      <div className="w-[100%] mt-4 flex  md:flex-row flex-col justify-between ">
+        <div className="md:w-[45%] border-[5px] p-2 md:p-0 border-[#46B4EE] md:border-0 flex flex-col gap-4">
+          <p className="md:text-4xl text-2xl bourtontitle my-4">
             Economic Development through a 360 lens of Charity, Programs and
             Entrepreneurship
           </p>
@@ -23,8 +23,8 @@ const Approach = () => {
           </div>
         </div>
 
-        <p className="h-[400px] w-[1px] bg-black"></p>
-        <div className="w-[45%] p-4 text-[18px] flex flex-col trebuc justify-between ">
+        <p className="h-[400px] w-[1px] md:block hidden bg-black"></p>
+        <div className="md:w-[45%]  p-4 text-[18px] flex flex-col trebuc justify-between ">
           <p>
             Institutional investors, emerging market entrepreneurs, and
             multinationals, are often skeptical about seeking new ventures in
@@ -44,7 +44,7 @@ const Approach = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-center bg-gradient-to-r rounded-[12px] hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer text-2xl text-white  from-[#27419B] to-[#21B4EE] bourtontitle uppercase mt-4 p-4 items-center bg-blue-500 w-[100%]">
+      <div className="flex justify-center  text-center bg-gradient-to-r rounded-[12px] hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer text-2xl text-white  from-[#27419B] to-[#21B4EE] bourtontitle uppercase mt-4 p-4 items-center bg-blue-500 w-[100%]">
         request for client testimonials
       </div>
     </div>

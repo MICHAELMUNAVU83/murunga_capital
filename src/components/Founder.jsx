@@ -3,12 +3,17 @@ import React from "react";
 const Founder = () => {
   return (
     <div className="py-8 w-[90%] mx-auto ">
-      <div className="flex justify-between w-[100%] border-t-[5px] border-[#27419B]">
-        <div className="w-[50%]">
-          <img src="/founder.svg" className="h-[750px] w-[100%] object-cover" />
+      <div className="md:hidden flex w-[100%] justify-end">
+        <p className="bourtontitle border-[#27419B]  text-5xl bg-clip-text text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE]">
+          OUR FOUNDER
+        </p>
+      </div>
+      <div className="flex justify-between md:flex-row flex-col w-[100%] border-t-[5px] md:border-[#27419B]">
+        <div className="md:w-[50%]">
+          <img src="/founder.svg" className="md:h-[750px] h-[400px] w-[100%] object-cover" />
         </div>
-        <div className="w-[50%] flex  flex-col gap-8 px-8 text-xl trebuc">
-          <div className="flex w-[100%] justify-end">
+        <div className="md:w-[50%] flex  flex-col gap-8 md:px-8 text-xl trebuc">
+          <div className="md:flex hidden w-[100%] justify-end">
             <p className="bourtontitle border-[#27419B]  text-5xl bg-clip-text text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE]">
               OUR FOUNDER
             </p>

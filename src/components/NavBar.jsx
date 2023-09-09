@@ -2,7 +2,7 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <div className="top-4 px-8 flex justify-between items-center w-[100%] fixed  shadow-sm shadow-r=gray-300 bg-white h-[90px]">
+    <div className="top-4 px-8 flex justify-between items-center w-[100%] fixed  shadow-sm shadow-gray-300 bg-white h-[90px]">
       <img src="/logo.svg" className="h-[103px] w-[173px] object-contain" />
 
       <div className="flex gap-12 items-center text-xl">
