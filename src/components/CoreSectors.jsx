@@ -56,7 +56,7 @@ const CoreSectors = () => {
   ];
 
   return (
-    <div className="py-8 w-[90%] mx-auto ">
+    <div id="core-sectors" className="py-8 w-[90%] mx-auto ">
       <Swiper
         style={{
           "--swiper-navigation-color": "#fff",

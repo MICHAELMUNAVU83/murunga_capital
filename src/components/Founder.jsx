@@ -2,7 +2,7 @@ import React from "react";
 
 const Founder = () => {
   return (
-    <div className="py-8 w-[90%] mx-auto ">
+    <div id="founder" className="py-8 w-[90%] mx-auto ">
       <div className="md:hidden flex w-[100%] justify-end">
         <p className="bourtontitle border-[#27419B]  text-5xl bg-clip-text text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE]">
           OUR FOUNDER

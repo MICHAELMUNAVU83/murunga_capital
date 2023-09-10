@@ -2,7 +2,10 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="md:h-[100vh]  mx-auto w-[90%] flex  md:flex-row  flex-col-reverse justify-between">
+    <div
+      id="home"
+      className="md:h-[100vh]  mx-auto w-[90%] flex  md:flex-row  flex-col-reverse justify-between"
+    >
       <div className="md:w-[55%] h-[100%]  md:py-12 flex flex-col justify-between gap-4">
         <div className="md:flex hidden w-[100%] md:pt-24 flex-col gap-2">
           <div className="w-[100%] bourtontitle border-b-[5px] border-[#27419B]  text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE]">

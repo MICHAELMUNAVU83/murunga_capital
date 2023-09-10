@@ -2,7 +2,7 @@ import React from "react";
 
 const Approach = () => {
   return (
-    <div className="py-8 w-[90%] mx-auto">
+    <div id="approach" className="py-8 w-[90%] mx-auto">
       <div className="w-[100%] bourtontitle border-t-[5px] border-[#27419B]  text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE]">
         OUR APPROACH
       </div>
