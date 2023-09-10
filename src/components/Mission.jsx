@@ -8,7 +8,7 @@ const Mission = () => {
           OUR MISSION
         </p>
       </div>
-      <div className="flex md:flex-row flex-col gap-4 justify-between w-[100%] border-t-[5px] md:border-[#27419B]">
+      <div className="flex md:flex-row flex-col gap-4 justify-between w-[100%] md:border-t-[5px] md:border-[#27419B]">
         <div className="md:w-[50%]">
           <img
             src="/mission.svg"

@@ -9,7 +9,7 @@ const Contact = () => {
         </p>
       </div>
 
-      <div className="w-[100%] mt-4 flex md:flex-row flex-col-reverse justify-between ">
+      <div className="w-[100%] mt-4 flex md:flex-row flex-col gap-4 justify-between ">
         <div className="md:w-[45%] flex flex-col gap-4">
           <p className="text-3xl uppercase bourtontitle">we’re here to serve</p>
           <div className="text-xl flex flex-col gap-4 trebuc">

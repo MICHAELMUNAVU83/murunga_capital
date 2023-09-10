@@ -86,25 +86,27 @@ const Hero = () => {
               <p className="trebuc">Growth. Innovation. Impact.</p>
             </div>
             <div className="h-[100%] w-[100%] flex justify-center  items-center">
-              <p
+              {/* <p
                 onClick={swipeback}
                 className="md:w-[39px] md:h-[39px] h-[30px]  w-[50px] p-1 -mr-4   z-30 rounded-full flex justify-center gap-0 items-center bg-gradient-to-r from-[#27419B] to-[#21B4EE]  text-white cursor-pointer"
               >
                 <IoIosArrowUp className="-rotate-90" />
-              </p>
+              </p> */}
+              <img
+                onClick={swipeback}
+                src="/swipe.svg"
+                className="md:h-[39px] h-[30px] rotate-180 -mr-4 w-[30px] md:w-[39px]"
+              />
+
               <img
                 src={slide.image}
-                className="h-[100%] w-[100%] object-cover"
+                className="h-[100%] w-[95%] md:w-[100%] object-cover"
               />
-              <p
+              <img
                 onClick={swipe}
-                style={{
-                  borderRadius: "50%",
-                }}
-                className="md:w-[39px] md:h-[39px] h-[30px]  w-[50px] p-1 -ml-4   z-30 rounded-full flex justify-center items-center bg-gradient-to-r from-[#27419B] to-[#21B4EE]  text-white cursor-pointer"
-              >
-                <IoIosArrowUp className="rotate-90" />
-              </p>
+                src="/swipe.svg"
+                className="md:h-[39px] h-[30px]  -ml-4 w-[30px] md:w-[39px]"
+              />
             </div>
           </div>
         </SwiperSlide>
