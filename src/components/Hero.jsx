@@ -44,7 +44,7 @@ const Hero = () => {
       className=" w-[100%]  swiper-container"
       loop={true}
       autoplay={{
-        delay: 5000,
+        delay: 7000,
         disableOnInteraction: false,
       }}
       modules={[Autoplay, Navigation, Pagination, Scrollbar]}
@@ -83,7 +83,26 @@ const Hero = () => {
               </div>
               <p className="trebuc">Growth. Innovation. Impact.</p>
             </div>
-            <img src={slide.image} className="h-[100%] w-[100%] object-cover" />
+            <div className="h-[100%] w-[100%] flex justify-center  items-center">
+              <p
+                onClick={swipeback}
+                className="w-[39px] h-[39px] -mr-4 z-30 rounded-full flex justify-center items-center bg-gradient-to-r from-[#27419B] to-[#21B4EE]  text-white cursor-pointer"
+              >
+                <img src="/arrows.svg" className="rotate-180 object-contain" />
+                <img src="/arrows.svg" className="rotate-180 object-contain" />
+              </p>
+              <img
+                src={slide.image}
+                className="h-[100%] w-[100%] object-cover"
+              />
+              <p
+                onClick={swipe}
+                className="w-[39px] h-[39px] -ml-4 z-30 rounded-full flex justify-center items-center bg-gradient-to-r from-[#27419B] to-[#21B4EE]  text-white cursor-pointer"
+              >
+                <img src="/arrows.svg" className=" object-contain" />
+                <img src="/arrows.svg" className=" object-contain" />
+              </p>
+            </div>
           </div>
         </SwiperSlide>
       ))}
