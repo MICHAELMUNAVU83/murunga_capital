@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="py-8 w-[90%] mx-auto">
+    <div className="py-8 px-12 mx-auto">
       <div className="flex flex-col border-t-[5px] md:border-[#27419B] gap-0">
         <p className="bourtontitle border-[#27419B]  text-5xl bg-clip-text text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE]">
           CONTACT US

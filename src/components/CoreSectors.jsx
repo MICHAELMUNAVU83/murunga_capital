@@ -56,7 +56,7 @@ const CoreSectors = () => {
   ];
 
   return (
-    <div id="core-sectors" className="py-8 w-[90%] mx-auto ">
+    <div id="core-sectors" className="py-8 px-12 mx-auto ">
       <Swiper
         style={{
           "--swiper-navigation-color": "#fff",
@@ -139,7 +139,7 @@ const CoreSectors = () => {
           <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
         </SwiperSlide>
       </Swiper>
-      {/* <div className="md:w-[80%] w-[90%]  mx-auto ">
+      {/* <div className="md:w-[80%] px-12  mx-auto ">
         <Swiper
           style={{
             "--swiper-navigation-color": "#fff",

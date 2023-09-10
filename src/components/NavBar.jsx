@@ -9,7 +9,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="top-4 md:px-8  px-4 flex justify-between items-center w-[100%] fixed  shadow-sm shadow-gray-300 bg-white h-[45px] md:h-[90px]">
+    <div className="top-4 md:px-8 z-50  px-4 flex justify-between items-center w-[100%] fixed  shadow-sm shadow-gray-300 bg-white h-[45px] md:h-[90px]">
       <a href="#home">
         <img
           src="/logo.svg"
