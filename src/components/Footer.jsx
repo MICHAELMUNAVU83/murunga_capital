@@ -10,41 +10,71 @@ const Footer = () => {
           Interact with us
         </p>
       </div>
-      <div className="grid md:grid-cols-6 grid-cols-3  mt-4 gap-4 w-[100%]">
-        <a href="/" rel="noreferrer" target="_blank">
+      <div className="flex justify-center items-center flex-wrap mt-4 gap-4 w-[100%]">
+        <a
+          href="/"
+          className="w-[30%] md:w-[15%] flex justify-center items-center"
+          rel="noreferrer"
+          target="_blank"
+        >
           <img
             src="/instagram.svg"
-            className="md:h-[50px] md:w-[50px] w-[30px] h-[30px] object-contain"
+            className="md:h-[50px]  h-[30px] object-contain"
           />
         </a>
-        <a href="/" rel="noreferrer" target="_blank">
+        <a
+          href="/"
+          className="w-[30%] md:w-[15%] flex justify-center items-center"
+          rel="noreferrer"
+          target="_blank"
+        >
           <img
             src="/facebook.svg"
-            className="md:h-[50px] md:w-[50px] w-[30px] h-[30px] object-contain"
+            className="md:h-[50px]  h-[30px] object-contain"
           />
         </a>
-        <a href="/" rel="noreferrer" target="_blank">
+        <a
+          href="/"
+          className="w-[30%] md:w-[15%] flex justify-center items-center"
+          rel="noreferrer"
+          target="_blank"
+        >
           <img
             src="/whatsapp.svg"
-            className="md:h-[50px] md:w-[50px] w-[30px] h-[30px] object-contain"
+            className="md:h-[50px]  h-[30px] object-contain"
           />
         </a>
-        <a href="/" rel="noreferrer" target="_blank">
+        <a
+          href="/"
+          className="w-[30%] md:w-[15%] flex justify-center items-center"
+          rel="noreferrer"
+          target="_blank"
+        >
           <img
             src="/linkedin.svg"
-            className="md:h-[50px] md:w-[50px] w-[30px] h-[30px] object-contain"
+            className="md:h-[50px]  h-[30px] object-contain"
           />
         </a>
-        <a href="/" rel="noreferrer" target="_blank">
+        <a
+          href="/"
+          className="w-[30%] md:w-[15%] flex justify-center items-center"
+          rel="noreferrer"
+          target="_blank"
+        >
           <img
             src="/twitter.svg"
-            className="md:h-[50px] md:w-[50px] w-[30px] h-[30px] object-contain"
+            className="md:h-[50px]  h-[30px] object-contain"
           />
         </a>
-        <a href="/" rel="noreferrer" target="_blank">
+        <a
+          href="/"
+          className="w-[30%] md:w-[15%] flex justify-center items-center"
+          rel="noreferrer"
+          target="_blank"
+        >
           <img
             src="/mail.svg"
-            className="md:h-[50px] md:w-[50px] w-[30px] h-[30px] object-contain"
+            className="md:h-[50px]  h-[30px] object-contain"
           />
         </a>
       </div>
