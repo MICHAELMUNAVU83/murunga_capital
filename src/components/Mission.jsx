@@ -2,7 +2,7 @@ import React from "react";
 
 const Mission = () => {
   return (
-    <div id="mission" className="py-8 px-12 mx-auto ">
+    <div id="mission" className="py-8 px-4 md:px-12 mx-auto ">
       <div className="flex md:hidden  w-[100%] justify-start md:justify-end">
         <p className="md:text-6xl text-4xl bg-clip-text font-bold text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE]">
           OUR MISSION

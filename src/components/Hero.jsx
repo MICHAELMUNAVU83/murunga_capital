@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
+import { IoIosArrowUp } from "react-icons/io";
 
 const Hero = () => {
   const swipe = () => {
@@ -86,10 +87,9 @@ const Hero = () => {
             <div className="h-[100%] w-[100%] flex justify-center  items-center">
               <p
                 onClick={swipeback}
-                className="w-[39px] h-[39px] -mr-4 z-30 rounded-full flex justify-center items-center bg-gradient-to-r from-[#27419B] to-[#21B4EE]  text-white cursor-pointer"
+                className="md:w-[39px] md:h-[39px] h-[30px]  w-[50px] p-1 -mr-4   z-30 rounded-full flex justify-center gap-0 items-center bg-gradient-to-r from-[#27419B] to-[#21B4EE]  text-white cursor-pointer"
               >
-                <img src="/arrows.svg" className="rotate-180 object-contain" />
-                <img src="/arrows.svg" className="rotate-180 object-contain" />
+                <IoIosArrowUp className="-rotate-90" />
               </p>
               <img
                 src={slide.image}
@@ -97,10 +97,12 @@ const Hero = () => {
               />
               <p
                 onClick={swipe}
-                className="w-[39px] h-[39px] -ml-4 z-30 rounded-full flex justify-center items-center bg-gradient-to-r from-[#27419B] to-[#21B4EE]  text-white cursor-pointer"
+                style={{
+                  borderRadius: "50%",
+                }}
+                className="md:w-[39px] md:h-[39px] h-[30px]  w-[50px] p-1 -ml-4   z-30 rounded-full flex justify-center items-center bg-gradient-to-r from-[#27419B] to-[#21B4EE]  text-white cursor-pointer"
               >
-                <img src="/arrows.svg" className=" object-contain" />
-                <img src="/arrows.svg" className=" object-contain" />
+                <IoIosArrowUp className="rotate-90" />
               </p>
             </div>
           </div>

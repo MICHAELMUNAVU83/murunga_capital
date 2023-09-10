@@ -2,13 +2,13 @@ import React from "react";
 
 const Founder = () => {
   return (
-    <div id="founder" className="py-8 px-12 mx-auto ">
+    <div id="founder" className="py-8 px-4 md:px-12 mx-auto ">
       <div className="md:hidden flex w-[100%] justify-end">
         <p className="bourtontitle border-[#27419B]  text-5xl bg-clip-text text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE]">
           OUR FOUNDER
         </p>
       </div>
-      <div className="flex justify-between md:flex-row flex-col w-[100%] border-t-[5px] md:border-[#27419B]">
+      <div className="flex justify-between md:flex-row flex-col w-[100%] md:border-t-[5px] md:border-[#27419B]">
         <div className="md:w-[50%]">
           <img
             src="/founder.svg"
