@@ -41,6 +41,7 @@ const Hero = () => {
 
   return (
     <Swiper
+      id="home"
       slidesPerView={1}
       className=" w-[100%]  swiper-container"
       loop={true}
