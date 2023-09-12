@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/autoplay";
 import { Navigation, Pagination, Scrollbar, Autoplay } from "swiper/modules";
+import { useInView } from "react-intersection-observer";
 import { IoIosArrowUp } from "react-icons/io";
+import { motion } from "framer-motion";
 
 const Hero = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
+  const variants = {
+    hidden: { opacity: 0, x: -50 },
+    visible: { opacity: 1, x: 0 },
+  };
   const swipe = () => {
     const swiper = document.querySelector(".swiper-container").swiper;
     swiper.slideNext();
@@ -43,7 +53,7 @@ const Hero = () => {
     <Swiper
       id="home"
       slidesPerView={1}
-      className=" w-[100%]  swiper-container"
+      className="w-[100%]  swiper-container"
       loop={true}
       autoplay={{
         delay: 7000,
@@ -56,7 +66,12 @@ const Hero = () => {
           key={slide.id}
           className="md:h-[100vh]  px-4  mx-auto md:px-12 flex  md:flex-row  flex-col-reverse justify-between "
         >
-          <div className="md:w-[55%] h-[100%]  md:py-12 flex flex-col justify-between gap-4">
+          <motion.div
+            className="md:w-[55%] h-[100%]  md:py-12 flex flex-col justify-between gap-4"
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.5 }}
+          >
             <div className="md:flex hidden w-[100%] md:pt-24 flex-col gap-2">
               <div className="w-[100%] bourtontitle border-b-[5px] border-[#27419B]  text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE]">
                 MURUNGA CAPITAL GROUP LLC
@@ -77,7 +92,7 @@ const Hero = () => {
                 <img src="/arrows.svg" />
               </div>
             </div>
-          </div>
+          </motion.div>
           <div className="md:w-[45%] w-[100%] pt-24 md:pt-0 flex flex-col gap-4">
             <div className="flex md:hidden w-[100%] md:pt-24 flex-col gap-2">
               <div className="w-[100%] bourtontitle border-b-[5px] border-[#27419B]  text-xl bg-clip-text text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE]">
@@ -100,6 +115,7 @@ const Hero = () => {
 
               <img
                 src={slide.image}
+                loading="lazy"
                 className="h-[100%] w-[95%] md:w-[100%] object-cover"
               />
               <img

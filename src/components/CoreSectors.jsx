@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
@@ -6,6 +5,15 @@ import "swiper/css/thumbs";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import { Swiper, SwiperSlide } from "swiper/react";
+
+import React, { useRef, useState } from "react";
+
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
+
+// import required modules
 
 import {
   FreeMode,
@@ -16,7 +24,7 @@ import {
 } from "swiper/modules";
 
 const CoreSectors = () => {
-  const [thumbsSwiper, setThumbsSwiper] = useState("");
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const coresectors = [
     {
       id: 1,
@@ -56,7 +64,7 @@ const CoreSectors = () => {
   ];
 
   return (
-    <div id="core-sectors" className="py-8 px-12 mx-auto ">
+    <>
       <Swiper
         style={{
           "--swiper-navigation-color": "#fff",
@@ -139,55 +147,7 @@ const CoreSectors = () => {
           <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
         </SwiperSlide>
       </Swiper>
-      {/* <div className="md:w-[80%] px-12  mx-auto ">
-        <Swiper
-          style={{
-            "--swiper-navigation-color": "#fff",
-            "--swiper-pagination-color": "#fff",
-          }}
-          loop={true}
-          spaceBetween={10}
-          className="mb-2 cursor-pointer py-8"
-          thumbs={{ swiper: thumbsSwiper }}
-          pagination={true}
-          modules={[FreeMode, Navigation, Thumbs, Pagination]}
-        >
-          {coresectors.map((sector) => (
-            <SwiperSlide>
-              <div className="flex justify-around  ">
-                <div className="bg-red-500 h-[300px] w-[300px]">
-                  {sector.title}
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-        <Swiper
-          onSwiper={setThumbsSwiper}
-          loop={true}
-          slidesPerView={4}
-          className="mySwiper"
-          freeMode={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-
-            loop: true,
-          }}
-          watchSlidesProgress={true}
-          modules={[FreeMode, Navigation, Thumbs, Autoplay]}
-        >
-          {coresectors.map((sector) => (
-            <SwiperSlide className="h-[300px] w-[25%]  ">
-              <img
-                src={sector.img}
-                className="  object-cover object-center opacity-60 hover:opacity-100 cursor-pointer"
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div> */}
-    </div>
+    </>
   );
 };
 
