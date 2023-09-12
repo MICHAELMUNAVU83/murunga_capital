@@ -50,7 +50,7 @@ const Founder = () => {
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
               variants={variants}
-              transition={{ duration: 0.6, delay: 0.1 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
               className="bourtontitle border-[#27419B]  text-5xl bg-clip-text text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE]"
             >
               OUR FOUNDER
@@ -61,7 +61,7 @@ const Founder = () => {
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
             variants={variants}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
           >
             Our Principal Benedict Murunga, served as a Peace Corps Response
             Volunteer in Rwanda for 3 years. He holds an MBA in Corporate
@@ -73,7 +73,7 @@ const Founder = () => {
           <motion.p
             animate={inView ? "visible" : "hidden"}
             variants={variants}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            transition={{ duration: 0.6, delay: 1 }}
           >
             He speaks 5 languages and has over 25 years’ experience in strategy,
             finance, and marketing across Europe, Middle East, Asia, US, and
@@ -83,7 +83,7 @@ const Founder = () => {
           <motion.p
             animate={inView ? "visible" : "hidden"}
             variants={variants}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.6, delay: 1.4 }}
           >
             He has served on several boards including the board of the
             Interfaith Children’s Movement in Atlanta, an advocacy organization
