@@ -68,9 +68,9 @@ const Hero = () => {
         >
           <motion.div
             className="md:w-[55%] h-[100%]  md:py-12 flex flex-col justify-between gap-4"
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.5 }}
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.6 }}
           >
             <div className="md:flex hidden w-[100%] md:pt-24 flex-col gap-2">
               <div className="w-[100%] bourtontitle border-b-[5px] border-[#27419B]  text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE]">
@@ -113,8 +113,12 @@ const Hero = () => {
                 className="md:h-[39px] h-[30px] rotate-180 -mr-4 w-[30px] md:w-[39px]"
               />
 
-              <img
+              <motion.img
                 src={slide.image}
+                initial="hidden"
+                animate="visible"
+                variants={variants}
+                transition={{ duration: 0.6 }}
                 loading="lazy"
                 className="h-[100%] w-[95%] md:w-[100%] object-cover"
               />
