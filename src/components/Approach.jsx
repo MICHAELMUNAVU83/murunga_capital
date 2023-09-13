@@ -56,8 +56,7 @@ const Approach = () => {
             variants={variants}
             transition={{ duration: 1, delay: 0.8 }}
           >
-            Economic Development through a 360 lens of Charity, Programs, and
-            Entrepreneurship
+          We succeed because we look at Investment in Africa through an Impact lens.
           </motion.p>
           <motion.div
             className="w-[100%] flex justify-between"

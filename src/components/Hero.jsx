@@ -31,7 +31,7 @@ const Hero = () => {
   const slides = [
     {
       id: 1,
-      title: "Discover Growth, Innovation and Impact",
+      title: "UNLOCK Growth, Innovation and Impact",
       desc: "Explore how Murunga Capital can unlock opportunities and drive positive change in emerging markets.",
       image: "/hero1.svg",
     },
@@ -73,10 +73,10 @@ const Hero = () => {
             transition={{ duration: 1.6 }}
           >
             <div className="md:flex hidden w-[100%] md:pt-24 flex-col gap-2">
-              <div className="w-[100%] bourtontitle border-b-[5px] border-[#27419B]  text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE]">
-                MURUNGA CAPITAL GROUP LLC
-              </div>
-              <p className="trebuc">Growth. Innovation. Impact.</p>
+              <img
+                src="/banner.svg"
+                className="w-[100%] h-[109px] object-cover"
+              />
             </div>
             <div className="flex flex-col  gap-2 w-[100%]">
               <div className="bourtontitle text-3xl md:text-6xl">
@@ -95,18 +95,12 @@ const Hero = () => {
           </motion.div>
           <div className="md:w-[45%] w-[100%] pt-24 md:pt-0 flex flex-col gap-4">
             <div className="flex md:hidden w-[100%] md:pt-24 flex-col gap-2">
-              <div className="w-[100%] bourtontitle border-b-[5px] border-[#27419B]  text-xl bg-clip-text text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE]">
-                MURUNGA CAPITAL GROUP LLC
-              </div>
-              <p className="trebuc">Growth. Innovation. Impact.</p>
+              <img
+                src="/banner.svg"
+                className="w-[100%] h-[71px] object-cover"
+              />
             </div>
             <div className="h-[100%] w-[100%] flex justify-center  items-center">
-              {/* <p
-                onClick={swipeback}
-                className="md:w-[39px] md:h-[39px] h-[30px]  w-[50px] p-1 -mr-4   z-30 rounded-full flex justify-center gap-0 items-center bg-gradient-to-r from-[#27419B] to-[#21B4EE]  text-white cursor-pointer"
-              >
-                <IoIosArrowUp className="-rotate-90" />
-              </p> */}
               <img
                 onClick={swipeback}
                 src="/swipe.svg"
