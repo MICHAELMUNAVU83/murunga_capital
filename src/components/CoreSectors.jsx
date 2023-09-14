@@ -15,7 +15,7 @@ const CoreSectors = () => {
   const [paragraph, setParagraph] = useState(
     "In Finance, we leverage financial expertise to fuel economic growth. We work with businesses, institutions, and individuals to create sustainable financial solutions that drive prosperity and financial inclusion."
   );
-  const [selectedSlide, setSelectedSlide] = useState(null); // Track selected slide
+  const [selectedSlide, setSelectedSlide] = useState(null);
 
   const coresectors = [
     {
@@ -56,7 +56,6 @@ const CoreSectors = () => {
   ];
 
   const handleSlideClick = (description) => {
-    // Update the paragraph and selectedSlide state when a slide is clicked
     setParagraph(description);
   };
 
