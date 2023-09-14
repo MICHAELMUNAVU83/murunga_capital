@@ -61,7 +61,12 @@ const CoreSectors = () => {
 
   return (
     <>
-      <div className="border-2 mx-20 border-[#000] border-gradient-to-r from-[#27419B] to-[#21B4EE]">
+      <div className="md:flex hidden mx-auto w-[90%] justify-start md:justify-end md:border-[#27419B] md:border-t-[5px]">
+        <p className=" text-4xl uppercase bg-clip-text font-bold text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE] ">
+          Core Sectors
+        </p>
+      </div>
+      <div className="border-4 mx-20 border-[#27419B] border-gradient-to-r from-[#27419B] mt-10 to-[#21B4EE]">
         <p>{paragraph}</p>
       </div>
       <Swiper
