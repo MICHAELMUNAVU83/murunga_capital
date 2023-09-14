@@ -19,7 +19,7 @@ function App() {
       <Approach />
       <Founder />
       <Values />
-      {/* <CoreSectors /> */}
+      <CoreSectors />
       <Contact />
       <Footer />
     </div>
