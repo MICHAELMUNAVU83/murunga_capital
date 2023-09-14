@@ -33,19 +33,19 @@ const Hero = () => {
       id: 1,
       title: "UNLOCK Growth, Innovation and Impact",
       desc: "Explore how Murunga Capital can unlock opportunities and drive positive change in emerging markets.",
-      image: "/hero1.svg",
+      image: "/1.png",
     },
     {
       id: 2,
       title: "Leaders in Sustainable Investment",
       desc: "Learn about our commitment to responsible investing and how we're creating a lasting impact in key sectors.",
-      image: "/hero2.svg",
+      image: "/2.png",
     },
     {
       id: 3,
       title: "Partner with Us",
       desc: "Ready to make a difference? Contact us today to discover how you can leverage our expertise to drive growth, innovation, and impact in emerging markets.",
-      image: "/hero3.svg",
+      image: "/3.png",
     },
   ];
 

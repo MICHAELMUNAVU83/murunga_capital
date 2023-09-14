@@ -23,7 +23,7 @@ const Mission = () => {
         <div className="md:w-[50%]">
           <motion.img
             ref={ref}
-            src="/mission.svg"
+            src="/4.png"
             className="md:h-[538px] h-[228px] w-[100%] object-cover"
             initial="hidden"
             animate={inView ? "visible" : "hidden"}

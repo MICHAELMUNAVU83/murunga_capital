@@ -36,7 +36,7 @@ const Founder = () => {
       <div className="flex justify-between md:flex-row flex-col w-[100%] md:border-t-[5px] md:border-[#27419B]">
         <div className="md:w-[50%]">
           <motion.img
-            src="/founder.svg"
+            src="/5.png"
             className="md:h-[750px] h-[400px] w-[100%] object-cover"
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
