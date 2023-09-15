@@ -85,7 +85,7 @@ const Hero = () => {
               <p className="text-[20px] trebuc">{slide.desc}</p>
             </div>
 
-            <div className="bg-gradient-to-r rounded-[12px] hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer bourtontitle uppercase w-[285px]  text-2xl  from-[#27419B] to-[#21B4EE]  flex gap-2 justify-center items-center text-white px-8 py-3">
+            <div className="bg-gradient-to-r w-[100%] rounded-[12px] hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer bourtontitle uppercase md:w-[285px]  text-2xl  from-[#27419B] to-[#21B4EE]  flex gap-2 justify-center items-center text-white px-8 py-3">
               <p>Learn More</p>
               <div className="flex items-center">
                 <img src="/arrows.svg" />

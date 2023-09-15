@@ -42,7 +42,7 @@ const Approach = () => {
       >
         <motion.div
           ref={ref}
-          className="md:w-[45%] border-[5px] p-2 md:p-0 border-[#46B4EE] md:border-0 flex flex-col gap-4"
+          className="md:w-[45%] border-[5px] p-2 md:p-0 border-[#27419B] md:border-0 flex flex-col gap-4"
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           variants={variants}
@@ -56,7 +56,8 @@ const Approach = () => {
             variants={variants}
             transition={{ duration: 1, delay: 0.8 }}
           >
-          We succeed because we look at Investment in Africa through an Impact lens.
+            We succeed because we look at Investment in Africa through an Impact
+            lens.
           </motion.p>
           <motion.div
             className="w-[100%] flex justify-between"

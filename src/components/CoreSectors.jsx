@@ -62,15 +62,25 @@ const CoreSectors = () => {
   return (
     <>
       <div className="md:flex hidden mx-auto w-[90%] justify-start md:justify-end md:border-[#27419B] md:border-t-[5px]">
-        <p className=" text-4xl uppercase bg-clip-text font-bold text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE] ">
+        <p className=" text-5xl uppercase bg-clip-text bourtontitle font-bold text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE] ">
           Core Sectors
         </p>
       </div>
-      <div className="border-4 mx-20 border-[#27419B] border-gradient-to-r from-[#27419B] mt-10 to-[#21B4EE]">
+      <div className="border-4  trebuc w-[90%]  md:h-[180px] h-[260px] mb-8  flex justify-center items-center p-4 text-xl  mx-auto border-[#27419B]  mt-10 ">
         <p>{paragraph}</p>
       </div>
       <Swiper
-        slidesPerView={3}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+        }}
         spaceBetween={30}
         keyboard={{
           enabled: true,
@@ -79,16 +89,16 @@ const CoreSectors = () => {
           clickable: true,
         }}
         modules={[Keyboard, Navigation]}
-        className="mx-20"
+        className="w-[90%] mx-auto"
       >
         <div className="flex gap-20">
           {coresectors.map((coresector) => (
             <SwiperSlide key={coresector.id}>
               <div
-                className={`flex flex-col h-full justify-between ${
+                className={`flex flex-col pb-12 my-4 cursor-pointer justify-between items-center h-[250px] shadow-xl transition-all ease-in-out duration-500 hover:shadow-blue-500  ${
                   selectedSlide === coresector.id
-                    ? "bg-gradient-to-r from-[#27419B] to-[#21B4EE] rounded-xl p-2 h-[52px] w-[100%] text-[#CBCCD3] placeholder-[#CBCCD3] flex items-center justify-center "
-                    : " flex items-center justify-center"
+                    ? "shadow-blue-400"
+                    : "shadow-gray-400"
                 }`}
                 onClick={() => {
                   handleSlideClick(coresector.description);
@@ -102,7 +112,7 @@ const CoreSectors = () => {
                     alt={coresector.title}
                   />
                 </div>
-                <div className="mt-5 bg-gradient-to-r from-[#27419B] to-[#21B4EE] rounded-xl p-2 h-[52px] w-[100%]   text-[#fff]">
+                <div className="mt-5 bg-gradient-to-r bourtontitle flex items-center text-[30px] from-[#27419B] to-[#21B4EE]  p-2 h-[52px] w-[100%]   text-[#fff]">
                   <h2>{coresector.title}</h2>
                 </div>
               </div>
