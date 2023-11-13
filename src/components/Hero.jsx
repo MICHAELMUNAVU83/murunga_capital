@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -18,71 +18,56 @@ const Hero = () => {
     hidden: { opacity: 0, x: -50 },
     visible: { opacity: 1, x: 0 },
   };
-  const swipe = () => {
-    const swiper = document.querySelector(".swiper-container").swiper;
-    swiper.slideNext();
-  };
 
-  const swipeback = () => {
-    const swiper = document.querySelector(".swiper-container").swiper;
-    swiper.slidePrev();
-  };
-
-  const slides = [
-    {
-      image: "/bg1.png",
-    },
-    {
-      image: "/bg2.jpeg",
-    },
-  ];
+  const slides = ["/bg1.png", , "/bg2.jpeg"];
 
   return (
     <>
-      <Swiper
-        id="home"
-        slidesPerView={1}
-        className="w-[100%] -mb-12 z-10  mt-[45px]  swiper-container "
-        loop={true}
-        autoplay={{
-          delay: 7000,
-          disableOnInteraction: false,
-        }}
-        modules={[Autoplay, Navigation, Pagination, Scrollbar]}
-      >
-        {slides.map((slide) => (
-          <SwiperSlide key={slide.id} className="md:h-[100vh] ">
-            <motion.div
-              className="w-[100%] z-0 h-[100%]  md:py-12 "
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1.6 }}
-            >
-              <img
-                src={slide.image}
-                alt=""
-                className="w-[100%] z-0 h-[100vh] object-cover"
-              />
-            </motion.div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <div className=" mb-48  relative w-[100vw]   ">
+        <Swiper
+          id="home"
+          slidesPerView={1}
+          className="w-[100%]  swiper-container"
+          loop={true}
+          autoplay={{
+            delay: 7000,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay, Navigation, Pagination, Scrollbar]}
+        >
+          {slides.map((slide) => (
+            <SwiperSlide key={slide.id} className="h-[100vh]   ">
+              <motion.div
+                className="w-[100%] relative  h-[100%]  md:py-12 "
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1.6 }}
+              >
+                <img
+                  src={slide}
+                  className="w-[100%] h-[100%] relative object-cover mx-auto"
+                />
+              </motion.div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
 
-      <div className="bg-white z-50 shadow-gray-200  shadow-xl w-[70%] mx-auto flex flex-col gap-4 p-8">
-        <p className="bourtontitle text-5xl font-bold">
-          Our Focus: Fighting The Wicked Problems in Development
-        </p>
-        <p className="trebuc text-xl">
-          We strive to unlock Growth, Innovation and Impact. Explore how Murunga
-          Capital can unlock opportunities and drive positive change in emerging
-          markets.
-        </p>
-        <div className="flex justify-start">
-          <div className="bg-gradient-to-r flex gap-2 rounded-[12px] hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer bourtontitle uppercase text-2xl from-[#27419B] to-[#21B4EE] text-white px-8 py-3">
-            Learn More
-            <div className="flex items-center">
-              <img src="/arrows.svg" />
-              <img src="/arrows.svg" />
+        <div className="bg-white absolute md:-bottom-24 -bottom-36 left-1/2 transform -translate-x-1/2 z-50 shadow-gray-200   shadow-xl md:w-[70%] w-[100%] mx-auto flex flex-col gap-4 p-12">
+          <p className="bourtontitle md:text-5xl font-bold">
+            Our Focus: Fighting The Wicked Problems in Development
+          </p>
+          <p className="trebuc md:text-xl">
+            We strive to unlock Growth, Innovation and Impact. Explore how
+            Murunga Capital can unlock opportunities and drive positive change
+            in emerging markets.
+          </p>
+          <div className="flex justify-start">
+            <div className="bg-gradient-to-r flex gap-2 rounded-[12px] hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer bourtontitle uppercase text-2xl from-[#27419B] to-[#21B4EE] text-white px-8 py-3">
+              Learn More
+              <div className="flex items-center">
+                <img src="/arrows.svg" />
+                <img src="/arrows.svg" />
+              </div>
             </div>
           </div>
         </div>

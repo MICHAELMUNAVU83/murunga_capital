@@ -61,12 +61,12 @@ const CoreSectors = () => {
 
   return (
     <>
-      <div className="md:flex hidden mx-auto w-[90%] justify-start md:justify-end md:border-[#27419B] md:border-t-[5px]">
+      <div className="md:flex hidden mx-auto w-[90%] justify-center">
         <p className=" text-5xl uppercase bg-clip-text bourtontitle font-bold text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE] ">
           Core Sectors
         </p>
       </div>
-      <div className="border-4  trebuc w-[90%]  md:h-[180px] h-[260px] mb-8  flex justify-center items-center p-4 text-xl  mx-auto border-[#27419B]  mt-10 ">
+      <div className="border-8 trebuc w-[90%]  md:h-[180px] h-[260px] mb-8  flex justify-center items-center p-4 text-[24px]  mx-auto border-[#46B4EE]  mt-10 ">
         <p>{paragraph}</p>
       </div>
       <Swiper

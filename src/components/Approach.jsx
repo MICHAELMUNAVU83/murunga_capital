@@ -23,7 +23,7 @@ const Approach = () => {
     >
       <motion.div
         ref={ref}
-        className="w-[100%] bourtontitle border-t-[5px] border-[#27419B]  text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE]"
+        className="w-[100%] bourtontitle  flex justify-center items-center text-5xl   bg-clip-text text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE]"
         initial="hidden"
         animate="visible"
         variants={variants}
@@ -34,7 +34,7 @@ const Approach = () => {
 
       <motion.div
         ref={ref}
-        className="w-[100%] mt-4 flex  md:flex-row flex-col justify-between "
+        className="w-[100%] mt-4 flex md:px-24  px-6  flex-col justify-between "
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         variants={variants}
@@ -42,7 +42,7 @@ const Approach = () => {
       >
         <motion.div
           ref={ref}
-          className="md:w-[45%] border-[5px] p-2 md:p-0 border-[#27419B] md:border-0 flex flex-col gap-4"
+          className="w-[100%] p-2 md:p-0  md:border-0 flex flex-col gap-4"
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           variants={variants}
@@ -50,7 +50,7 @@ const Approach = () => {
         >
           <motion.p
             ref={ref}
-            className="md:text-4xl text-2xl bourtontitle my-4"
+            className="md:text-4xl text-base bourtontitle my-4"
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
             variants={variants}
@@ -67,7 +67,7 @@ const Approach = () => {
             transition={{ duration: 1, delay: 1 }}
           >
             <motion.div
-              className="w-[85%] text-xl bourtontitle border-t-2 border-black"
+              className="w-[100%] text-xl bourtontitle border-t-2 border-black"
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
               variants={variants}
@@ -84,17 +84,15 @@ const Approach = () => {
             >
               <img
                 src="/quote.svg"
-                className="h-[150px] -mt-4 w-[100%]"
+                className="h-[100px] -mt-8 w-[100%]"
                 alt="Quote"
               />
             </motion.div>
           </motion.div>
         </motion.div>
 
-        <p className="h-[400px] w-[1px] md:block hidden bg-black"></p>
-
         <motion.div
-          className="md:w-[45%]  p-4 text-[18px] flex flex-col trebuc justify-between "
+          className="w-[100%]  p-4 md:text-[28px] text-xl gap-6  flex flex-col trebuc justify-between "
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           variants={variants}
@@ -118,16 +116,6 @@ const Approach = () => {
             lens of Charity, Programs, and Entrepreneurship.
           </p>
         </motion.div>
-      </motion.div>
-
-      <motion.div
-        className="flex justify-center  text-center bg-gradient-to-r rounded-[12px] hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer text-2xl text-white  from-[#27419B] to-[#21B4EE] bourtontitle uppercase mt-4 p-4 items-center bg-blue-500 w-[100%]"
-        initial="hidden"
-        animate={inView ? "visible" : "hidden"}
-        variants={variants}
-        transition={{ duration: 1, delay: 1.8 }}
-      >
-        request for client testimonials
       </motion.div>
     </motion.div>
   );
