@@ -12,7 +12,7 @@ const Contact = () => {
     visible: { opacity: 1, x: 0 },
   };
   return (
-    <div className="py-8 md:px-12 px-4 mx-auto">
+    <div id="contact" className="py-8 md:px-12 px-4 mx-auto">
       <motion.div
         ref={ref}
         initial="hidden"

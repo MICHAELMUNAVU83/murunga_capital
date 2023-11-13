@@ -11,19 +11,19 @@ const NavBar = () => {
   return (
     <div className="top-0 md:px-8 z-50  px-4 flex justify-between items-center w-[100%] fixed  shadow-sm shadow-gray-300 bg-white h-[45px] md:h-[90px]">
       <div className="md:flex hidden gap-12 items-center text-xl">
-        <a href="#mission">
+        <a href="#about">
           <p className="bourtontitle ">About US</p>
         </a>
       </div>
       <a href="#home">
         <img
           src="/banner.svg"
-          className="h-[56px] md:w-[423px] w-[93px] object-contain"
+          className="h-[56px] md:w-[423px] w-[200px] object-contain"
         />
       </a>
 
       <div className="md:flex hidden gap-12 items-center text-xl">
-        <a href="#core-sectors">
+        <a href="#contact">
           <p className="bourtontitle ">Contact US</p>
         </a>
       </div>
@@ -51,6 +51,9 @@ const NavBar = () => {
         </div>
         <div className="flex flex-col gap-8 mt-8 items-center text-center text-2xl  w-[100%] h-[100%] ">
           <a href="/">
+            <p className="bourtontitle ">About Us</p>
+          </a>
+          <a href="/">
             <p className="bourtontitle ">Mission</p>
           </a>
           <a href="/">
@@ -61,6 +64,9 @@ const NavBar = () => {
           </a>
           <a href="/">
             <p className="bourtontitle ">Our Values</p>
+          </a>
+          <a href="/">
+            <p className="bourtontitle ">Contact Us</p>
           </a>
         </div>
       </div>
