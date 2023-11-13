@@ -23,3 +23,7 @@ html {
 .bourtontitle {
   font-family: "bourtonbase";
 }
+
+.swiper-container {
+  z-index: 0 !important;
+}

@@ -22,18 +22,17 @@ const Founder = () => {
       id="founder"
       className="py-8 px-4 md:px-12 mx-auto "
     >
-      <div className="md:hidden flex w-[100%] justify-end">
-        <motion.p
-          initial="hidden"
-          animate={inView ? "visible" : "hidden"}
-          variants={variants}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="bourtontitle border-[#27419B]  text-5xl bg-clip-text text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE]"
-        >
-          OUR FOUNDER
-        </motion.p>
-      </div>
-      <div className="flex justify-between md:flex-row flex-col w-[100%] md:border-t-[5px] md:border-[#27419B]">
+      <motion.p
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        variants={variants}
+        transition={{ duration: 0.6, delay: 0.1 }}
+        className="bourtontitle border-[#27419B] text-center my-6  text-5xl bg-clip-text text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE]"
+      >
+        OUR PRINCIPAL
+      </motion.p>
+
+      <div className="flex justify-between md:flex-row flex-col w-[100%] ">
         <div className="md:w-[50%]">
           <motion.img
             src="/5.png"
@@ -43,20 +42,11 @@ const Founder = () => {
             variants={variants}
             transition={{ duration: 0.6 }}
           />
+          <p className="text-6xl uppercase text-center  bourtontitle">
+            Benedict Murunga
+          </p>
         </div>
         <div className="md:w-[50%] flex  flex-col gap-8 md:px-8 text-xl trebuc">
-          <div className="md:flex hidden w-[100%] justify-end">
-            <motion.p
-              initial="hidden"
-              animate={inView ? "visible" : "hidden"}
-              variants={variants}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="bourtontitle border-[#27419B]  text-5xl bg-clip-text text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE]"
-            >
-              OUR FOUNDER
-            </motion.p>
-          </div>
-
           <motion.p
             initial="hidden"
             animate={inView ? "visible" : "hidden"}

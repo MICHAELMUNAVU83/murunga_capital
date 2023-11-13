@@ -30,102 +30,64 @@ const Hero = () => {
 
   const slides = [
     {
-      id: 1,
-      title: "UNLOCK Growth, Innovation and Impact",
-      desc: "Explore how Murunga Capital can unlock opportunities and drive positive change in emerging markets.",
-      image: "/1.png",
+      image: "/bg1.png",
     },
     {
-      id: 2,
-      title: "Leaders in Sustainable Investment",
-      desc: "Learn about our commitment to responsible investing and how we're creating a lasting impact in key sectors.",
-      image: "/2.png",
-    },
-    {
-      id: 3,
-      title: "Partner with Us",
-      desc: "Ready to make a difference? Contact us today to discover how you can leverage our expertise to drive growth, innovation, and impact in emerging markets.",
-      image: "/3.png",
+      image: "/bg2.jpeg",
     },
   ];
 
   return (
-    <Swiper
-      id="home"
-      slidesPerView={1}
-      className="w-[100%]  swiper-container"
-      loop={true}
-      autoplay={{
-        delay: 7000,
-        disableOnInteraction: false,
-      }}
-      modules={[Autoplay, Navigation, Pagination, Scrollbar]}
-    >
-      {slides.map((slide) => (
-        <SwiperSlide
-          key={slide.id}
-          className="md:h-[100vh]  px-4  mx-auto md:px-12 flex  md:flex-row  flex-col-reverse justify-between "
-        >
-          <motion.div
-            className="md:w-[55%] h-[100%]  md:py-12 flex flex-col justify-between gap-4"
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1.6 }}
-          >
-            <div className="md:flex hidden w-[100%] md:pt-24 flex-col gap-2">
+    <>
+      <Swiper
+        id="home"
+        slidesPerView={1}
+        className="w-[100%] -mb-12 z-10  mt-[45px]  swiper-container "
+        loop={true}
+        autoplay={{
+          delay: 7000,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay, Navigation, Pagination, Scrollbar]}
+      >
+        {slides.map((slide) => (
+          <SwiperSlide key={slide.id} className="md:h-[100vh] ">
+            <motion.div
+              className="w-[100%] z-0 h-[100%]  md:py-12 "
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1.6 }}
+            >
               <img
-                src="/banner.svg"
-                className="w-[100%] h-[109px] object-cover"
-              />
-            </div>
-            <div className="flex flex-col  gap-2 w-[100%]">
-              <div className="bourtontitle text-3xl md:text-6xl">
-                {slide.title}
-              </div>
-              <p className="text-[20px] trebuc">{slide.desc}</p>
-            </div>
-
-            <div className="bg-gradient-to-r w-[100%] rounded-[12px] hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer bourtontitle uppercase md:w-[285px]  text-2xl  from-[#27419B] to-[#21B4EE]  flex gap-2 justify-center items-center text-white px-8 py-3">
-              <p>Learn More</p>
-              <div className="flex items-center">
-                <img src="/arrows.svg" />
-                <img src="/arrows.svg" />
-              </div>
-            </div>
-          </motion.div>
-          <div className="md:w-[45%] w-[100%] pt-24 md:pt-0 flex flex-col gap-4">
-            <div className="flex md:hidden w-[100%] md:pt-24 flex-col gap-2">
-              <img
-                src="/banner.svg"
-                className="w-[100%] h-[71px] object-cover"
-              />
-            </div>
-            <div className="h-[100%] w-[100%] flex justify-center  items-center">
-              <img
-                onClick={swipeback}
-                src="/swipe.svg"
-                className="md:h-[39px] h-[30px] rotate-180 -mr-4 w-[30px] md:w-[39px]"
-              />
-
-              <motion.img
                 src={slide.image}
-                initial="hidden"
-                animate="visible"
-                variants={variants}
-                transition={{ duration: 0.6 }}
-                loading="lazy"
-                className="h-[100%] w-[95%] md:w-[100%] object-cover"
+                alt=""
+                className="w-[100%] z-0 h-[100vh] object-cover"
               />
-              <img
-                onClick={swipe}
-                src="/swipe.svg"
-                className="md:h-[39px] h-[30px]  -ml-4 w-[30px] md:w-[39px]"
-              />
+            </motion.div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+      <div className="bg-white z-50 shadow-gray-200  shadow-xl w-[70%] mx-auto flex flex-col gap-4 p-8">
+        <p className="bourtontitle text-5xl font-bold">
+          Our Focus: Fighting The Wicked Problems in Development
+        </p>
+        <p className="trebuc text-xl">
+          We strive to unlock Growth, Innovation and Impact. Explore how Murunga
+          Capital can unlock opportunities and drive positive change in emerging
+          markets.
+        </p>
+        <div className="flex justify-start">
+          <div className="bg-gradient-to-r flex gap-2 rounded-[12px] hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer bourtontitle uppercase text-2xl from-[#27419B] to-[#21B4EE] text-white px-8 py-3">
+            Learn More
+            <div className="flex items-center">
+              <img src="/arrows.svg" />
+              <img src="/arrows.svg" />
             </div>
           </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+        </div>
+      </div>
+    </>
   );
 };
 

@@ -37,21 +37,15 @@ const Contact = () => {
         >
           <p className="text-3xl uppercase bourtontitle">we’re here to serve</p>
           <div className="text-xl flex flex-col gap-4 trebuc">
+            <img src="/contact.svg" className="w-[100%] h-[100%]" />
             <p>
               Ready to explore how Murunga Capital Group can drive growth,
               innovation, and impact for your organization or collaborate on
               impactful projects? We're just a message away.
             </p>
             <p>
-              Whether you're an institutional investor, an entrepreneur looking
-              to venture into emerging markets, a multinational seeking
-              opportunities, or a potential partner (NGOs, governments,
-              foundations), we're here to assist you every step of the way.
-              Don't hesitate to reach out to our team of experts. We look
-              forward to connecting with you, understanding your goals, and
-              charting a course towards impactful success together.
+              Growth. Innovation. Impact. Contact Murunga Capital Group today.
             </p>
-            <p>Let's make a difference. Contact Murunga Capital Group today.</p>
           </div>
         </motion.div>
 

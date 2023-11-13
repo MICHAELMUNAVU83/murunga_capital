@@ -9,29 +9,22 @@ const NavBar = () => {
   };
 
   return (
-    <div className="top-4 md:px-8 z-50  px-4 flex justify-between items-center w-[100%] fixed  shadow-sm shadow-gray-300 bg-white h-[45px] md:h-[90px]">
+    <div className="top-0 md:px-8 z-50  px-4 flex justify-between items-center w-[100%] fixed  shadow-sm shadow-gray-300 bg-white h-[45px] md:h-[90px]">
+      <div className="md:flex hidden gap-12 items-center text-xl">
+        <a href="#mission">
+          <p className="bourtontitle ">About US</p>
+        </a>
+      </div>
       <a href="#home">
         <img
-          src="/logo.svg"
-          className="md:h-[103px] h-[56px] md:w-[173px] w-[93px] object-contain"
+          src="/banner.svg"
+          className="h-[56px] md:w-[423px] w-[93px] object-contain"
         />
       </a>
 
       <div className="md:flex hidden gap-12 items-center text-xl">
-        <a href="#mission">
-          <p className="bourtontitle ">Mission</p>
-        </a>
-        <a href="#approach">
-          <p className="bourtontitle ">Our Approach</p>
-        </a>
-        <a href="#founder">
-          <p className="bourtontitle ">Our Founder</p>
-        </a>
-        <a href="#values">
-          <p className="bourtontitle ">Our Values</p>
-        </a>
         <a href="#core-sectors">
-          <p className="bourtontitle ">Core Sectors</p>
+          <p className="bourtontitle ">Contact US</p>
         </a>
       </div>
       <div className="md:hidden flex gap-4">
