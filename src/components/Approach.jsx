@@ -50,7 +50,7 @@ const Approach = () => {
         >
           <motion.p
             ref={ref}
-            className="md:text-4xl text-base bourtontitle my-4"
+            className="md:text-4xl text-center text-base bourtontitle my-4"
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
             variants={variants}

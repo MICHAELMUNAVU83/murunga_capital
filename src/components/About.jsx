@@ -22,7 +22,7 @@ const About = () => {
           variants={variants}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          OUR MISSION
+         ABOUT US
         </motion.p>
       </div>
       <div className="flex md:flex-row flex-col gap-4 justify-between w-[100%] ">
