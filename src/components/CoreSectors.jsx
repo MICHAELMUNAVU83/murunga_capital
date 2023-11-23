@@ -66,7 +66,7 @@ const CoreSectors = () => {
           Core Sectors
         </p>
       </div>
-      <div className="border-8 trebuc w-[90%]  md:h-[180px] h-[260px] mb-8  flex justify-center items-center p-4 text-[24px]  mx-auto border-[#46B4EE]  mt-10 ">
+      <div className="border-8 trebuc w-[90%]  md:h-[180px]  mb-8  flex justify-center items-center p-4 text-[24px]  mx-auto border-[#46B4EE]  mt-10 ">
         <p>{paragraph}</p>
       </div>
       <Swiper
@@ -95,7 +95,7 @@ const CoreSectors = () => {
           {coresectors.map((coresector) => (
             <SwiperSlide key={coresector.id}>
               <div
-                className={`flex flex-col pb-12 my-4 cursor-pointer justify-between items-center h-[250px] shadow-xl transition-all ease-in-out duration-500 hover:shadow-blue-500  ${
+                className={`flex flex-col pb-12 my-4 cursor-pointer justify-between items-center md:h-[250px] shadow-xl transition-all ease-in-out duration-500 hover:shadow-blue-500  ${
                   selectedSlide === coresector.id
                     ? "shadow-blue-400"
                     : "shadow-gray-400"

@@ -51,8 +51,8 @@ const Values = () => {
           variants={variants}
           transition={{ duration: 0.6 }}
           onClick={swipeback}
-          src="/swipe.svg"
-          className="md:h-[39px] h-[30px] z-40 rotate-180  -mr-4 w-[30px] md:w-[39px]"
+          src="/swipeback.svg"
+          className="md:h-[39px]   h-[30px] z-40  -mr-4 w-[30px] md:w-[39px]"
         />
 
         <Swiper
@@ -67,7 +67,7 @@ const Values = () => {
               slidesPerView: 3,
             },
           }}
-          className=" w-[98%]  swiper-containers"
+          className=" w-[90%]  swiper-containers"
           loop={true}
           rewind={true}
           // autoplay={{

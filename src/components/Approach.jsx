@@ -92,7 +92,7 @@ const Approach = () => {
         </motion.div>
 
         <motion.div
-          className="w-[100%]  p-4 md:text-[28px] text-xl gap-6  flex flex-col trebuc justify-between "
+          className="w-[100%]   md:text-[28px] text-xl gap-6  flex flex-col trebuc justify-between "
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           variants={variants}
