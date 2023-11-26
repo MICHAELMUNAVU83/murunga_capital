@@ -34,17 +34,19 @@ const Services = () => {
           {services.map((service) => (
             <div className="flex  w-[100%]  flex-col gap-4">
               <div className="w-[100%] flex flex-col">
-                <div className="bg-gradient-to-r -mb-8 z-10 bourtontitle text-2xl text-center flex justify-center items-center text-white from-[#27419B] to-[#21B4EE] md:w-[500px] w-[300px] hover:scale-105 transition-all ease-in-out cursor-pointer duration-500 uppercase h-[52px] shadow-xl  rounded-md">
+                <div className="bg-gradient-to-r -mb-16 md:-mb-8 z-10 bourtontitle text-2xl text-center flex justify-center items-center text-white from-[#27419B] to-[#21B4EE] md:w-[500px] w-[300px] hover:scale-105 transition-all ease-in-out cursor-pointer duration-500 uppercase h-[52px] shadow-xl  rounded-md">
                   {service.name}
                 </div>
                 <img
                   src={service.image}
                   alt={service.name}
-                  className="h-[279px]  w-[300px] md:w-[500px]"
+                  className="h-[279px] w-[300px] md:w-[500px]"
                 />
               </div>
 
-              <p className="trebux text-xl w-[300px] md:w-[500px]">{service.description}</p>
+              <p className="trebux text-xl w-[300px] md:w-[500px]">
+                {service.description}
+              </p>
             </div>
           ))}
         </div>
