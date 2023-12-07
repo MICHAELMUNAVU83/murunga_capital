@@ -45,7 +45,7 @@ const Hero = () => {
               >
                 <img
                   src={slide}
-                  className="w-[100%] h-[100%] relative object-cover mx-auto"
+                  className="w-[100%] h-[100%] relative object-cover  mx-auto"
                 />
               </motion.div>
             </SwiperSlide>
