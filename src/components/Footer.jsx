@@ -112,6 +112,11 @@ const Footer = () => {
       >
         © COPYRIGHT 2023 | MURUNGA CAPITAL GROUP LLC | ALL RIGHTS RESERVED
       </motion.p>
+
+      <img
+        src="/bannerssmall.png"
+        className="h-[300px] w-[600px] mx-auto mt-4 object-contain"
+      />
     </div>
   );
 };

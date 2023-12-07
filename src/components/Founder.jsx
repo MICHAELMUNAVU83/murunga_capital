@@ -53,11 +53,11 @@ const Founder = () => {
             variants={variants}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            Our Principal Benedict Murunga, served as a Peace Corps Response
-            Volunteer in Rwanda for 3 years. He holds an MBA in Corporate
-            Finance from the University of Notre Dame South Bend, Indiana in the
-            USA and a BA in Economics and Linguistics from the University of
-            Nairobi in Nairobi, Kenya.
+            Our Principal Benedict Murunga, is a Returned Peace Corps Response
+            Volunteer. He served in Rwanda for 3 years. He holds an MBA in
+            Corporate Finance from the University of Notre Dame South Bend,
+            Indiana in the USA and a BA in Economics and Linguistics from the
+            University of Nairobi in Nairobi, Kenya.
           </motion.p>
 
           <motion.p

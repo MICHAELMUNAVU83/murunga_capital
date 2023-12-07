@@ -16,9 +16,9 @@ html {
     url("./fonts/Bourton/bourtonbase.ttf") format("truetype");
 }
 
-.trebuc {
+/* .trebuc {
   font-family: "trebuc";
-}
+} */
 
 .bourtontitle {
   font-family: "bourtonbase";
