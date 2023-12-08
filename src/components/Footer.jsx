@@ -110,13 +110,9 @@ const Footer = () => {
         transition={{ duration: 0.6 }}
         className="text-center bourtontitle text-xl mt-4"
       >
-        © COPYRIGHT 2023 | MURUNGA CAPITAL GROUP LLC | ALL RIGHTS RESERVED
+        © COPYRIGHT 2023 | MURUNGA CAPITAL GROUP LLC | ALL RIGHTS RESERVED |
+        info@murungacapital.com
       </motion.p>
-
-      <img
-        src="/bannerssmall.png"
-        className="h-[300px] w-[600px] mx-auto mt-4 object-contain"
-      />
     </div>
   );
 };

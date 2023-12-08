@@ -70,10 +70,10 @@ const Values = () => {
           className=" w-[90%]  swiper-containers"
           loop={true}
           rewind={true}
-          // autoplay={{
-          //   delay: 7000,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 7000,
+            disableOnInteraction: false,
+          }}
           modules={[Autoplay, Navigation, Pagination, Scrollbar]}
         >
           {slides.map((slide) => (
