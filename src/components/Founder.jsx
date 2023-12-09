@@ -36,7 +36,7 @@ const Founder = () => {
         <div className="md:w-[50%]">
           <motion.img
             src="/founder.png"
-            className="md:h-[800px] h-[400px] w-[100%] md:object-contain object-cover"
+            className="md:h-[800px] h-[400px] w-[100%] object-contain"
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
             variants={variants}
