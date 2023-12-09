@@ -19,7 +19,10 @@ const Hero = () => {
     visible: { opacity: 1, x: 0 },
   };
 
-  const slides = ["/bg1.png", , "/Siss.png"];
+  const slides = [
+    { image: "/bg1.png", id: 1, text: "" },
+    { image: "/bg2.jpeg", id: 2, text: "Sisphyus" },
+  ];
 
   return (
     <>
@@ -46,13 +49,17 @@ const Hero = () => {
                 <div
                   className="w-[100%] relative h-[100%]"
                   style={{
-                    background: `url(${slide})`,
+                    background: `url(${slide.image})`,
                     backgroundSize: "cover",
                     width: "100%",
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "top",
                   }}
-                />
+                >
+                  <div className="absolute  bourtontitle md:text-7xl text-2xl top-12 md:left-12  left-6">
+                    {slide.text}
+                  </div>
+                </div>
                 {/* <img
                   src={slide}
                   className="w-[100%] h-[100%] relative object-cover   mx-auto"
