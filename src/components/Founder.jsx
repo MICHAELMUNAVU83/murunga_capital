@@ -53,7 +53,7 @@ const Founder = () => {
             variants={variants}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            Our Principal Benedict Murunga, is a Returned Peace Corps Response
+             Benedict Murunga, is a Returned Peace Corps Response
             Volunteer. He served in Rwanda for 3 years. He holds an MBA in
             Corporate Finance from the University of Notre Dame South Bend,
             Indiana in the USA and a BA in Economics and Linguistics from the
@@ -67,7 +67,7 @@ const Founder = () => {
           >
             He speaks 5 languages and has over 25 years’ experience in strategy,
             finance, and marketing across Europe, Middle East, Asia, US, and
-            Africa. He recently closed a $10 million renewable project in
+            Africa. He recently closed a  renewable energy project in
             Rwanda.
           </motion.p>
           <motion.p

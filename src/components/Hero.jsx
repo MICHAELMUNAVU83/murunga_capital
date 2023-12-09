@@ -19,7 +19,7 @@ const Hero = () => {
     visible: { opacity: 1, x: 0 },
   };
 
-  const slides = ["/bg1.png", , "/bg2.jpeg"];
+  const slides = ["/bg1.png", , "/sis.png"];
 
   return (
     <>
@@ -43,10 +43,20 @@ const Hero = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1.6 }}
               >
-                <img
+                <div
+                  className="w-[100%] relative h-[100%]"
+                  style={{
+                    background: `url(${slide})`,
+                    backgroundSize: "cover",
+                    width: "100%",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "top",
+                  }}
+                />
+                {/* <img
                   src={slide}
                   className="w-[100%] h-[100%] relative object-cover  mx-auto"
-                />
+                /> */}
               </motion.div>
             </SwiperSlide>
           ))}
