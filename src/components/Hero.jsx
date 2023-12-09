@@ -21,7 +21,7 @@ const Hero = () => {
 
   const slides = [
     { image: "/bg1.png", id: 1, text: "" },
-    { image: "/bg2.jpeg", id: 2, text: "Sisphyus" },
+    { image: "/bg2.jpeg", id: 2, text: "Sisyphus" },
   ];
 
   return (
