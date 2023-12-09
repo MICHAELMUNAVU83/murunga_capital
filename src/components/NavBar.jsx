@@ -9,7 +9,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="top-0 md:px-8 z-50  px-4 flex justify-between items-center w-[100%] fixed  shadow-sm shadow-gray-300 bg-white h-[45px] md:h-[90px]">
+    <div className="top-0 md:px-8 z-50  px-4 flex justify-between items-center w-[100%] fixed  shadow-sm shadow-gray-300 bg-white h-[50px] md:h-[90px]">
       <div className="md:flex hidden gap-12 items-center text-xl">
         <a href="#about">
           <p className="bourtontitle ">About US</p>
@@ -22,8 +22,8 @@ const NavBar = () => {
         />
 
         <img
-          src="/iconlogo.png"
-          className="md:hidden block h-[60px] w-[60px] object-contain "
+          src="/ap.jpeg"
+          className="md:hidden block h-[60px] w-[250px] object-contain  "
         />
       </a>
 
