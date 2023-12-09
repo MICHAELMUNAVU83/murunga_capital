@@ -19,7 +19,7 @@ const Hero = () => {
     visible: { opacity: 1, x: 0 },
   };
 
-  const slides = ["/bg1.png", , "/sis.png"];
+  const slides = ["/bg1.png", , "/Siss.png"];
 
   return (
     <>
@@ -38,7 +38,7 @@ const Hero = () => {
           {slides.map((slide) => (
             <SwiperSlide key={slide.id} className="h-[100vh]   ">
               <motion.div
-                className="w-[100%] relative  h-[100%]  md:py-12 "
+                className="w-[100%] relative  h-[100%]  md:py-16 "
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1.6 }}
@@ -55,14 +55,14 @@ const Hero = () => {
                 />
                 {/* <img
                   src={slide}
-                  className="w-[100%] h-[100%] relative object-cover  mx-auto"
+                  className="w-[100%] h-[100%] relative object-cover   mx-auto"
                 /> */}
               </motion.div>
             </SwiperSlide>
           ))}
         </Swiper>
 
-        <div className="bg-white absolute md:-bottom-24 -bottom-36 left-1/2 transform -translate-x-1/2 z-40 shadow-gray-200   shadow-xl md:w-[70%] w-[100%] mx-auto flex flex-col gap-4 p-12">
+        <div className="bg-white absolute md:-bottom-48 -bottom-36 left-1/2 transform -translate-x-1/2 z-40 shadow-gray-200   shadow-xl md:w-[70%] w-[100%] mx-auto flex flex-col gap-4 p-12">
           <p className="bourtontitle md:text-5xl font-bold">
             Our Focus: Fighting The Wicked Problems in Development
           </p>

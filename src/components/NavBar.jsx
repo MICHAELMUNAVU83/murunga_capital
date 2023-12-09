@@ -18,7 +18,12 @@ const NavBar = () => {
       <a href="#home">
         <img
           src="/banner.svg"
-          className="md:h-[70px] h-[80px] md:w-[400px] w-[260px] object-contain s "
+          className="md:h-[70px] hidden md:block h-[80px] md:w-[400px] w-[260px] object-contain "
+        />
+
+        <img
+          src="/iconlogo.png"
+          className="md:hidden block h-[60px] w-[60px] object-contain "
         />
       </a>
 
