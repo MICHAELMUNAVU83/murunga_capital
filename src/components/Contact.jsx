@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -11,6 +11,7 @@ const Contact = () => {
     hidden: { opacity: 0, x: -50 },
     visible: { opacity: 1, x: 0 },
   };
+
   return (
     <div id="contact" className="py-8 md:px-12 px-4 mx-auto">
       <motion.div
@@ -58,18 +59,24 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="md:w-[45%] flex flex-col gap-4"
         >
-          <form className="flex trebuc flex-col gap-4 w-[100%]">
+          <form
+            action="https://formspree.io/f/xgeqoana"
+            method="POST"
+            className="flex trebuc flex-col gap-4 w-[100%]"
+          >
             <div className="flex flex-col gap-5 md:flex-row justify-between w-[100%">
               <div className="md:w-[48%]">
                 <input
                   className="bg-gradient-to-r from-[#27419B] to-[#21B4EE] rounded-xl p-2 h-[52px] w-[100%] text-[#CBCCD3] placeholder-[#CBCCD3] "
                   placeholder="First Name"
+                  name="Fist_Name"
                 />
               </div>
               <div className="md:w-[48%]">
                 <input
                   class="bg-gradient-to-r from-[#27419B] to-[#21B4EE] rounded-xl p-2 h-[52px] w-[100%] text-[#CBCCD3] placeholder-[#CBCCD3] "
                   placeholder="Last Name"
+                  name="Last_Name"
                 />
               </div>
             </div>
@@ -77,27 +84,26 @@ const Contact = () => {
               <input
                 className="bg-gradient-to-r from-[#27419B] to-[#21B4EE]  p-2 rounded-xl h-[52px] w-[100%] text-[#CBCCD3] placeholder-[#CBCCD3] "
                 placeholder="Email"
+                name="Email"
               />
             </div>
             <div className="w-[100%]">
               <textarea
                 className="bg-gradient-to-r from-[#27419B] to-[#21B4EE] w-[100%]  p-2 rounded-xl h-[193px] text-[#CBCCD3] placeholder-[#CBCCD3]"
                 placeholder="Your Message here"
+                name="Message"
               />
             </div>
-            <div className="flex items-center gap-2 ">
-              <input type="checkbox" className="w-8 h-8" />
-              <p>
-                I would love to receive information on newsletters and more
-                offers
-              </p>
+
+            <div className="flex items-center gap-2">
+              <button
+                type="submit"
+                className="bg-gradient-to-r bourtontitle text-2xl text-white from-[#27419B] to-[#21B4EE] w-[100%] hover:scale-105 transition-all ease-in-out cursor-pointer duration-500 uppercase h-[52px] shadow-xl shadow-gray-200 rounded-md"
+              >
+                Send Message
+              </button>
             </div>
           </form>
-          <div className="flex items-center gap-2">
-            <button className="bg-gradient-to-r bourtontitle text-2xl text-white from-[#27419B] to-[#21B4EE] w-[100%] hover:scale-105 transition-all ease-in-out cursor-pointer duration-500 uppercase h-[52px] shadow-xl shadow-gray-200 rounded-md">
-              Send Message
-            </button>
-          </div>
         </motion.div>
       </div>
     </div>

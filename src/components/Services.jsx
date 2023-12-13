@@ -40,7 +40,7 @@ const Services = () => {
                 <img
                   src={service.image}
                   alt={service.name}
-                  className="h-[279px] w-[300px] md:w-[500px]"
+                  className="h-[279px] w-[3`00px] md:w-[500px]"
                 />
               </div>
 

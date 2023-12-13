@@ -55,22 +55,6 @@ const About = () => {
               Partnering with us is making a difference!
             </motion.p>
           </motion.div>
-
-          <motion.div
-            className="flex w-[100%] justify-center mt-8 md:mt-0  md:pl-12 md:justify-start"
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            variants={variants}
-            transition={{ duration: 0.6, delay: 0.3 }}
-          >
-            <div className="bg-gradient-to-r flex gap-2 rounded-[12px] hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer bourtontitle uppercase text-2xl from-[#27419B] to-[#21B4EE] text-white px-8 py-3">
-              Learn More
-              <div className="flex items-center">
-                <img src="/arrows.svg" />
-                <img src="/arrows.svg" />
-              </div>
-            </div>
-          </motion.div>
         </div>
       </div>
     </div>

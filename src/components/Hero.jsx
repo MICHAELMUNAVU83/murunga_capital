@@ -60,10 +60,6 @@ const Hero = () => {
                     {slide.text}
                   </div>
                 </div>
-                {/* <img
-                  src={slide}
-                  className="w-[100%] h-[100%] relative object-cover   mx-auto"
-                /> */}
               </motion.div>
             </SwiperSlide>
           ))}
@@ -78,15 +74,6 @@ const Hero = () => {
             Murunga Capital can unlock opportunities and drive positive change
             in emerging markets.
           </p>
-          <div className="flex justify-start">
-            <div className="bg-gradient-to-r flex gap-2 rounded-[12px] hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer bourtontitle uppercase text-2xl from-[#27419B] to-[#21B4EE] text-white px-8 py-3">
-              Learn More
-              <div className="flex items-center">
-                <img src="/arrows.svg" />
-                <img src="/arrows.svg" />
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </>
