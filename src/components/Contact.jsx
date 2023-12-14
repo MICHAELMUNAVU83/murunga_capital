@@ -60,7 +60,7 @@ const Contact = () => {
           className="md:w-[45%] flex flex-col gap-4"
         >
           <form
-            action="https://formspree.io/f/xgeqoana"
+            action="https://formspree.io/f/mleyqqgb"
             method="POST"
             className="flex trebuc flex-col gap-4 w-[100%]"
           >
