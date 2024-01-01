@@ -57,8 +57,7 @@ const Founder = () => {
             served in Rwanda for 3 years. He holds an MBA in Corporate Finance
             from the University of Notre Dame South Bend, Indiana in the USA and
             a BA in Economics and Linguistics from the University of Nairobi in
-            Nairobi, Kenya. He is currently completing his Executive Master of
-            Public Administration(EMPA) at Rutgers University.
+            Nairobi, Kenya. 
           </motion.p>
 
           <motion.p
@@ -81,6 +80,16 @@ const Founder = () => {
             organization focused on developing leadership and management talent
             of the youth, and the board of the American Chamber of Commerce In
             Rwanda.
+          </motion.p>
+          <motion.p
+            animate={inView ? "visible" : "hidden"}
+            variants={variants}
+            transition={{ duration: 0.6, delay: 1.6 }}
+          >
+
+
+          He is currently completing his Executive Master of
+            Public Administration(EMPA) at Rutgers University.
           </motion.p>
         </div>
       </div>

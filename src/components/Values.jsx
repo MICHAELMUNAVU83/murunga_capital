@@ -35,7 +35,7 @@ const Values = () => {
       </p>
 
       <p class="text-center text-xl my-3">
-        Our work begins with and ends with our values
+        Our work begins with and ends with our values.
       </p>
 
       <div className="flex justify-between items-center w-[100%]">
