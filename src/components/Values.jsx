@@ -30,18 +30,13 @@ const Values = () => {
   const slides = ["/value1.svg", "/value2.svg", "/value3.svg", "/value4.svg"];
   return (
     <div id="values" className="py-8 md:px-12 px-4 mx-auto ">
-      <motion.div
-        ref={ref}
-        initial="hidden"
-        animate={inView ? "visible" : "hidden"}
-        variants={variants}
-        transition={{ duration: 0.6 }}
-        className="md:hidden flex w-[100%] justify-start"
-      >
-        <p className="bourtontitle border-[#27419B]  text-5xl bg-clip-text text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE]">
-          OUR VALUES
-        </p>
-      </motion.div>
+      <p className="bourtontitle border-[#27419B] text-center  text-5xl bg-clip-text text-transparent bg-gradient-to-r from-[#27419B] to-[#21B4EE]">
+        OUR VALUES
+      </p>
+
+      <p class="text-center text-xl my-3">
+        Our work begins with and ends with our values
+      </p>
 
       <div className="flex justify-between items-center w-[100%]">
         <motion.img

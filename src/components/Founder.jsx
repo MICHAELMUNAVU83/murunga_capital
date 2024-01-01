@@ -53,11 +53,12 @@ const Founder = () => {
             variants={variants}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-             Benedict Murunga, is a Returned Peace Corps Response
-            Volunteer. He served in Rwanda for 3 years. He holds an MBA in
-            Corporate Finance from the University of Notre Dame South Bend,
-            Indiana in the USA and a BA in Economics and Linguistics from the
-            University of Nairobi in Nairobi, Kenya.
+            Benedict Murunga, is a Returned Peace Corps Response Volunteer. He
+            served in Rwanda for 3 years. He holds an MBA in Corporate Finance
+            from the University of Notre Dame South Bend, Indiana in the USA and
+            a BA in Economics and Linguistics from the University of Nairobi in
+            Nairobi, Kenya. He is currently completing his Executive Master of
+            Public Administration(EMPA) at Rutgers University.
           </motion.p>
 
           <motion.p
@@ -67,8 +68,7 @@ const Founder = () => {
           >
             He speaks 5 languages and has over 25 years’ experience in strategy,
             finance, and marketing across Europe, Middle East, Asia, US, and
-            Africa. He recently closed a  renewable energy project in
-            Rwanda.
+            Africa. He recently closed a renewable energy project in Rwanda.
           </motion.p>
           <motion.p
             animate={inView ? "visible" : "hidden"}

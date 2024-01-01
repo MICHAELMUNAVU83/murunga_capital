@@ -99,9 +99,9 @@ const Approach = () => {
           transition={{ duration: 1, delay: 1.6 }}
         >
           <p>
-            Institutional investors, emerging market entrepreneurs, and
+            “Institutional investors, emerging market entrepreneurs, and
             multinationals are often skeptical about seeking new ventures in
-            lesser-known markets.
+            lesser-known markets.” Tarun Khanna et al
           </p>
 
           <p>

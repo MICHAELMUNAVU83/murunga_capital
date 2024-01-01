@@ -67,7 +67,7 @@ const Hero = () => {
 
         <div className="bg-white absolute md:-bottom-48 -bottom-36 left-1/2 transform -translate-x-1/2 z-40 shadow-gray-200   shadow-xl md:w-[70%] w-[100%] mx-auto flex flex-col gap-4 p-12">
           <p className="bourtontitle md:text-5xl font-bold">
-            Our Focus: Fighting The Wicked Problems in Development
+            Our Focus: Fighting The `Wicked Problems`  in Development
           </p>
           <p className="trebuc md:text-xl">
             We strive to unlock Growth, Innovation and Impact. Explore how
