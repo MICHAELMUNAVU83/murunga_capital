@@ -17,7 +17,7 @@ const NavBar = () => {
       </div>
       <a href="#home">
         <img
-          src="/banner.svg"
+          src="/murungatop.png"
           className="md:h-[70px] hidden md:block h-[80px] md:w-[400px] w-[260px] object-contain "
         />
 
