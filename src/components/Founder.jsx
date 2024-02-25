@@ -67,7 +67,7 @@ const Founder = () => {
           >
             He speaks 5 languages and has over 25 years’ experience in strategy,
             finance, and marketing across Europe, Middle East, Asia, US, and
-            Africa. He recently closed a renewable energy project in Rwanda.
+            Africa. 
           </motion.p>
           <motion.p
             animate={inView ? "visible" : "hidden"}
