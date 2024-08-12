@@ -72,7 +72,7 @@ const Hero = () => {
           <p className="trebuc md:text-xl">
             We strive to unlock Growth, Innovation and Impact. Explore how
             Murunga Capital can unlock opportunities and drive positive change
-            in emerging markets.
+            in developing communities.
           </p>
         </div>
       </div>

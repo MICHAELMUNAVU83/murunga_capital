@@ -47,9 +47,8 @@ const Mission = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <motion.p className="trebuc text-2xl">
-              We provide Growth, Innovation, and Impact Advisory to US-based
-              organizations doing business in Africa using Equity or Debt
-              Capital.
+              We provide Growth, Innovation, and Impact Advisory to
+              organizations across the US.
             </motion.p>
             <motion.p className="trebuc text-2xl">
               We do this with an overriding commitment to helping attain the SDG

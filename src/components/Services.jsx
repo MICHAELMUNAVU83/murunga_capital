@@ -6,7 +6,7 @@ const Services = () => {
       name: "Risk Management",
       image: "/service1.svg",
       description:
-        "Using various risk management tools, we identify the risk exposure of a company’s business model based on a macroeconomic risk analysis of the different markets in East Africa. Our clients benefit from accurate assessments of potential risks associated with doing business in the East African Region.",
+        "Using various risk management tools, we identify the risk exposure of a company’s business model based on a macroeconomic risk analysis of the different markets in developing communities. Our clients benefit from accurate assessments of potential risks associated with doing business in developing communities.",
     },
     {
       name: "Strategy Consulting",

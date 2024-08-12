@@ -56,8 +56,8 @@ const Approach = () => {
             variants={variants}
             transition={{ duration: 1, delay: 0.8 }}
           >
-            We succeed because we look at Investment in Africa through an Impact
-            lens.
+            We succeed because we look at Investment in developing communities
+            through an Impact lens.
           </motion.p>
           <motion.div
             className="w-[100%] flex justify-between"
@@ -107,13 +107,14 @@ const Approach = () => {
           <p>
             MURUNGA CAPITAL GROUP, LLC combines the diverse perspectives of
             macroeconomic, finance, strategy, and legal experts to reduce the
-            perceived risks of doing business in Africa. As seasoned global
-            experts, we leverage the human and financial capital to fill the
-            various institutional voids to drive growth in the region.
+            perceived risks of doing business in developing communities. As
+            seasoned global experts, we leverage the human and financial capital
+            to fill the various institutional voids to drive growth in the
+            communities.
           </p>
           <p>
-            We succeed because we look at Economic Development through a 360
-            lens of Charity, Programs, and Entrepreneurship.
+            We succeed because we look at Investment in developing communities
+            through an Impact lens.
           </p>
         </motion.div>
       </motion.div>
